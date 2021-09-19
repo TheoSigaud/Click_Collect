@@ -1,0 +1,27 @@
+.input {
+  background: $white;
+  border: 1px solid $glacial-white;
+  border-radius: 5px;
+  width: auto;
+  display: inline-block;
+  font-family: $font1;
+  padding: 0.5em 0.7em;
+
+  &--textarea {
+    padding-bottom: 100px;
+    resize: none;
+  }
+}
+
+.label {
+  font-family: $font2;
+  font-style: normal;
+  font-weight: bold;
+  font-size: rem(16);
+  line-height: 2em;
+  color: $black;
+}
+
+.checkboxes {
+  display: flex;
+}

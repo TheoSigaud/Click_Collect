@@ -1,0 +1,87 @@
+$container-width: 1140px;
+$gutter-width: 20px;
+$col-nb: 12;
+$sm-width: 576px;
+$md-width: 768px;
+$lg-width:992px;
+
+*{
+	box-sizing: border-box;
+}
+.row{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-right: -$gutter-width/2;
+	margin-left: -$gutter-width/2;
+}
+.align{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-end{
+	display: flex;
+	justify-content: flex-end;
+}
+.col-inner{
+	padding: 15px;
+}
+.main-doc{
+	margin-left: rem(225);
+	margin-right: rem(10);
+}
+.container{
+	padding: 50px 2rem 0 2rem;
+	width: 100%;
+	margin: auto;
+}
+
+.container-body{
+	position: absolute;
+	width: calc(100% - 220px);
+	top: 0;
+	right: 0;
+	min-height: 100vh;
+	padding-bottom: 50px;
+}
+
+.col {
+	flex-basis: 100%;
+	padding: 10px $gutter-width/2;
+	width: 100%;
+}		
+
+
+@media only screen and (min-width: $sm-width){
+$columns: $col-nb;
+	@for $i from 1 through $columns {
+		.col-sm-#{$i} {
+		flex-basis: ((100 / $columns) * $i) * 1%;
+		width: ((100 / $columns) * $i) * 1%;
+		padding: 10px $gutter-width/2;
+		}
+	}
+}
+
+@media only screen and (min-width: $md-width){
+$columns: $col-nb;
+	@for $i from 1 through $columns {
+		.col-md-#{$i} {
+		flex-basis: ((100 / $columns) * $i) * 1%;
+		width: ((100 / $columns) * $i) * 1%;
+		padding: 10px $gutter-width/2;
+		}
+	}
+}
+
+@media only screen and (min-width: $lg-width){
+$columns: $col-nb;
+	@for $i from 1 through $columns {
+		.col-lg-#{$i} {
+		flex-basis: ((100 / $columns) * $i) * 1%;
+		width: ((100 / $columns) * $i) * 1%;
+		padding: 10px $gutter-width/2;
+		}
+	}
+}

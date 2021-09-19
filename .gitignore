@@ -1,0 +1,7 @@
+db_data
+site
+server
+.idea
+docker-compose.yml
+www/webpack
+.DS_Store

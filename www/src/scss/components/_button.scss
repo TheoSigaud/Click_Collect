@@ -1,0 +1,64 @@
+.button{
+	display: inline-block;
+	width: auto;
+	text-align: center;
+	padding: 0.5em 0.7em;
+	border-radius: 0.25rem;
+	border: none;
+	font-size: 1rem;
+	text-decoration: none;
+
+	@media screen and (max-width: $phone-width){
+		font-size: rem(14);
+	}
+	&:hover{
+		background-color: lighten($blue-button, 10%);
+		cursor: pointer;
+	}
+	&--success{
+		background-color: $green;
+		border-color: $green;
+		color: $white;
+		&:hover{
+			background-color: lighten($green, 10%);
+		}
+	}
+	&--black{
+		background-color: $black;
+		color: $white;
+		&:hover{
+			background-color: lighten($black, 10%);
+		}
+	}
+	&--blue{
+		background-color: $blue;
+		border-color: $blue;
+		outline-color: $blue;
+		color: $white;
+
+		&:hover{
+			background-color: lighten($blue, 10%);
+		}
+	}
+	&--alert{
+		background-color: $red;
+		color: $white;
+		outline-color: $red;
+		&:hover{
+			background-color: lighten($red, 10%);
+		}
+	}
+	&--warning{
+		background-color: $yellow;
+		border-color: $yellow;
+		outline-color: $yellow;
+		color: $black;
+		&:hover{
+			background-color: lighten($yellow, 10%);
+		}
+	}
+}
+.button a {
+	text-decoration: none;
+	color: $white;
+}
