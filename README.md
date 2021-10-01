@@ -18,23 +18,7 @@ Pour pouvoir commencer avec notre projet, il vous faudra :
 
 Pour pouvoir installer notre projet, télécharger le repository avec la commande git clone.
 
-```
-$ git clone https://github.com/samysab/PA_click-Collect
-```
-
-Puis tapez la commande suivante afin de créer les différents conteneurs :
-
-```
-$ docker compose up -d
-```
-
-## Démarrage du projet 
-
-Pour lancer le projet, il faut tout simplement taper la commande :
-
-```
-$ docker compose up -d
-```
+Lancer votre serveur web.
 
 Vous tomberez ensuite sur l'installeur du CMS pour initialiser toutes les données et les charger directement dans le fichier .env.
 Il faudra changer l'adresse de la base de données en ```database```.
