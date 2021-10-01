@@ -10,7 +10,6 @@ Click & Create est CMS vous permettant de créer votre propre site d'e-commerce 
 
 Pour pouvoir commencer avec notre projet, il vous faudra :
 
-- Docker
 - MySQL
 - PHP
 - Apache
