@@ -44,7 +44,6 @@ Vous tomberez ensuite sur la page d'accueil !
 - PHP
 - JAVASCRIPT / JQUERY
 - HTML / CSS / SCSS
-- DOCKER
 
 ## Auteurs
 
